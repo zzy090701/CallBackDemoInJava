@@ -13,8 +13,13 @@ public class Student {
         return a + b;
     }
 
+    public int useCalculator(int a, int b) {
+        return new Calculator().add(a, b);
+
+    }
+
     public void fillBlank(int a, int b) {
-        int result = calcADD(a, b);
-        System.out.println(name + "心算:" + a + "+" + b + "=" + result);
+        int result = useCalculator(a, b);
+        System.out.println(name + "用计算器计算:" + a + "+" + b + "=" + result);
     }
 }

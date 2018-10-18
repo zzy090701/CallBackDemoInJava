@@ -1,7 +1,7 @@
 public class Test {
     public static void main(String[] args) {
-        int a = 123, b = 789;
+        int a = 123456, b = 789123;
         Student student = new Student("小明");
-        student.fillBlank(a, b);
+        student.callHelp(a, b);
     }
 }

@@ -18,8 +18,11 @@ public class Student {
 
     }
 
-    public void fillBlank(int a, int b) {
-        int result = useCalculator(a, b);
-        System.out.println(name + "用计算器计算:" + a + "+" + b + "=" + result);
+    public void callHelp(int a, int b) {
+        new SuperCalculator().add(a, b, this);
+    }
+
+    public void fillBlank(int a, int b, int result) {
+        System.out.println(name + "求助小红计算:" + a + "+" + b + "=" + result);
     }
 }
